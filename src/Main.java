@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
     // генерируем случайные значения
     // для этого вызываем метод generateRandomArray():
@@ -68,5 +69,15 @@ public class Main {
         //arr[0] = 193722; // для проверки
         float avgExpense = sum / arr.length;
         System.out.println("Средняя сумма трат за месяц составила " + avgExpense + " рублей");
+    }
+
+    public static void task4() {
+        System.out.println("Задача 4");
+        // Имя в обратном порядке
+        // Надо вывести правильно
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
+        }
     }
 }
