@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         task1();
+        task2();
     }
     // генерируем случайные значения
     // для этого вызываем метод generateRandomArray():
@@ -24,5 +25,25 @@ public class Main {
             sum += arr[i];
         }
         System.out.println("Сумма трат за месяц составила " + sum + " рублей");
+    }
+
+    public static void task2() {
+        System.out.println("Задача 2");
+        int[] arr = generateRandomArray();
+        //Также бухгалтерия попросила найти минимальную и максимальную трату за день
+        //Напишите программу, которая решит эту задачу, и выведите в консоль результат в формате:
+        //«Минимальная сумма трат за день составила … рублей. Максимальная сумма трат за день составила … рублей».
+        int minExpense = arr[0];
+        int maxExpense = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] < minExpense) {
+                minExpense = arr[i];
+            }
+            if (arr[i] > maxExpense) {
+                maxExpense = arr[i];
+            }
+        }
+        System.out.println("Минимальная сумма трат за день составила " + minExpense + " рублей. " +
+                "Максимальная сумма трат за день составила " + maxExpense + " рублей»");
     }
 }
