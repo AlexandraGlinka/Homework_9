@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
     // генерируем случайные значения
     // для этого вызываем метод generateRandomArray():
@@ -45,5 +46,16 @@ public class Main {
         }
         System.out.println("Минимальная сумма трат за день составила " + minExpense + " рублей. " +
                 "Максимальная сумма трат за день составила " + maxExpense + " рублей»");
+        // для проверки
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + ", ");
+        }
+        System.out.println();
+    }
+
+    public static void task3() {
+        System.out.println("Задача 3");
+        int[] arr = generateRandomArray();
+
     }
 }
