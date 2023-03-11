@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -52,6 +54,9 @@ public class Main {
             System.out.print(arr[i] + ", ");
         }
         System.out.println();
+        // сортировка массива
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));
     }
 
     public static void task3() {
