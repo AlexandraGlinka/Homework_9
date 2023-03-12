@@ -57,6 +57,9 @@ public class Main {
         // сортировка массива
         Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));
+        // ищем макс и мин после сортировки
+        System.out.println("Минимальная сумма трат за день составила " + arr[0] + " рублей. " +
+                "Максимальная сумма трат за день составила " + arr[arr.length - 1] + " рублей»");
     }
 
     public static void task3() {
